@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Especial</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0b3d0b; /* Fondo verde oscuro */
+            font-family: 'Cinzel', serif;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .container {
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #144e14; /* Fondo del cuadro */
+            border: 5px solid #d4af37;
+            border-radius: 20px;
+            max-width: 700px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container:before,
+        .container:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 90%;
+            top: -50%;
+            left: -50%;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.3), transparent);
+            transform: rotate(45deg);
+            animation: shimmer 5s infinite linear;
+            z-index: 0;
+        }
+
+        .container:after {
+            animation-delay: 4.5s;
+        }
+
+        @keyframes shimmer {
+            0% { transform: rotate(45deg) translateX(-100%); }
+            100% { transform: rotate(45deg) translateX(100%); }
+        }
+
+        .container-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #d4af37;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+
+        .subtitle {
+            font-size: 25px; /* Fuente más pequeña para esta sección */
+            margin: 10px 0;
+            color: #d4af37;
+            font-weight: normal;
+        }
+
+        .details {
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 20px auto;
+            color: #ffffff;
+            max-width: 600px;
+        }
+
+        .logo {
+            width: 220px; /* Imagen de birrete más pequeña */
+            animation: bounce 5s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 200% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .congrats {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #d4af37;
+            text-shadow: 2px 2px 10px rgba(212, 175, 55, 0.7);
+            animation: glow 2.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 2px 2px 5px rgba(212, 175, 55, 0.5);
+            }
+            100% {
+                text-shadow: 2px 2px 20px rgba(212, 175, 55, 1);
+            }
+        }
+
+        .border-frame {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -20px;
+            bottom: -20px;
+            border: 10px solid rgba(212, 175, 55, 0.5);
+            border-radius: 30px;
+            animation: frame-glow 3s infinite alternate;
+        }
+
+        @keyframes frame-glow {
+            0% {
+                border-color: rgba(212, 175, 55, 0.5);
+            }
+            100% {
+                border-color: rgba(212, 175, 55, 1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="border-frame"></div>
+        <div class="container-content">
+
+             <div class="details"> 
+               <div class="title"> <br> Invitacion Especial</div>
+               <br>
+   <div class="details"> 
+
+<img src="https://png.pngtree.com/png-vector/20221016/ourmid/pngtree-black-mortarboard-png-image_6351364.png" alt="Birrete" class="logo"/>
+
+          
+               <div class="subtitle"> <br> Queridos Graduandos</div>
+               <br>
+               Con gran entusiasmo, les extendemos una cordial invitación para celebrar juntos el cierre de una etapa inolvidable.<br><br>
+                El evento tendrá lugar en el colegio el dia <strong>miércoles 27 de noviembre</strong> y dará inicio a las <strong>11:30 AM</strong>.<br><br>
+                ¡Será un momento para celebrar juntos este logro tan importante en sus vidas!
+            </div>
+            <div class="congrats">¡Los esperamos!</div>
+            <div class="details" style="margin-top: 40px;">
+                Con cariño,<br>
+                <strong>Promoción Azairux 2025 </strong>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
